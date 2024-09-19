@@ -1,0 +1,58 @@
+.contenedor{
+    height: 600px;
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:
+               "header     header      header" 
+               "nav        nav         nav" 
+               "contenido1  contenido2   publicidad"
+               "pie        pie         pie";
+}
+.contenedor .header{
+    background-color: rgb(192, 144, 11);
+    grid-column:  header ;
+}
+.contenedor .nav{
+    background-color: rgb(169, 224, 15);
+    grid-column: nav ;
+}
+.contenedor .contenido1{
+    background-color: rgb(255, 255, 255);
+    grid-column: contenido1 ;
+    border-color: black;
+}
+.contenedor .contenido2{
+    background-color: rgb(255, 255, 255);
+    grid-column: contenido2 ;
+    border-color: black;
+}
+.contenedor .publicidad{
+    background-color: rgb(12, 194, 21);
+    grid-column: publicidad;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-gap: 10px;
+    padding: 10px;
+}
+.contenedor .pie{
+    background-color: rgb(224, 37, 37);
+    grid-area: pie ;
+    
+}
+
+.hijo1 {
+    background-color: blue;
+    border-radius: 20px;
+}
+.hijo2 {
+    background-color: rgb(68, 90, 204);
+    border-radius: 20px;
+}
+
